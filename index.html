@@ -7,17 +7,14 @@
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-  <title>WebAR6</title>
+  <title>WebAR7</title>
 </head>
 
 <body style="margin:0px; overflow:hidden;">
 
- <a-scene 
-     embedded arjs="debugUIEnabled:false; 
-     sourceType: webcam;"
+ <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;"
      vr-mode-ui="enabled: false;"
-     loading-screen="enabled: false;"
- ></a-scene>    
+     loading-screen="enabled: false;">   
    
     <a-assets>
       <a-asset-item id="model" src="shikaku.glb"></a-asset-item>
@@ -28,7 +25,7 @@
       <a-text value="ようこそ高木研究室へ！" position=" -0.3 0 0.5" align="center" rotation="-90 0 0" color="#7993ff">
       </a-text>
 
-      <a-entity gltf-model="#model" position="-0.55 0 -0.5" rotation="0 140 -10" scale="4 4 4" visible="true">
+      <a-entity gltf-model="#model" position="-0.55 0 -0.5" rotation="0 140 -10" scale="2 2 2" visible="true">
       </a-entity>
 
     </a-marker>
