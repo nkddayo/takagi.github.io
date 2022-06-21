@@ -4,16 +4,13 @@
         <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
 	<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>    
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-	<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>    
-	<script src="https://unpkg.com/aframe-look-at-component@0.6.0/dist/aframe-look-at-component.min.js"></script>     
+	<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.2.0/dist/aframe-extras.min.js"></script>       
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-        <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">  
+        <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;">  
             
             <a-assets>
-	        <a-asset-item id="turtle_obj" src="Satellite dish_Blender Internal render.obj"></a-asset-item>
-	        <a-asset-item id="turtle_mtl" src="Satellite dish_Blender Internal render.mtl"></a-asset-item>
 		<a-asset-items id="bird" src="scene.gltf" ></a-asset-items>
             </a-assets>　
             
@@ -35,17 +32,9 @@
                     rotation="-90 0 0"
                     gesture-handler
                 ></a-image>
-                
-                <a-obj-model 
-                    src="#turtle_obj" 
-                    mtl="#turtle_mtl" 
-                    position="0 0 -6" 
-                    rotation="0 -20 0"
-                ></a-obj-model>
-                 <a-obj-model src="Satellite dish_Blender Internal render.obj" mtl="Satellite dish_Blender Internal render.mtl"></a-obj-model>
 		
-		<a-entity gltf-model="#bird" scale="1 1 1" visible="true"></a-entity>   
-		<a-gltf-model src="scene.gltf"></a-gltf-model>
+		<a-entity gltf-model="#bird" play-all-model-animations="" position="-0.55 0 -0.5" rotation="0 140 -10" scale="4 4 4" visible="true"></a-entity>   
+		    
             </a-marker>
 
             <a-entity camera></a-entity>
