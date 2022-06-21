@@ -5,7 +5,7 @@
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>  
-  <title>WebAR9</title>
+  <title>WebAR10</title>
   </head>  
     
   <body style="margin : 0px; overflow: hidden;">
@@ -18,19 +18,17 @@
      </a-assets>
            
       <a-marker 
-              id="animated-marker"
               type="pattern"
               preset="custom"
               url="marker.patt"
               raycaster="objects: .clickable"
               emitevents="true"
               cursor="fuse: false; rayOrigin: mouse;"
-              id="markerA"
             >
         
         <a-image
           src="asset.jpeg"
-          position="0 0 0.3"
+          position="0 1 0"
           rotation="-90 0 0"
           scale="1.5 1.5 1"
           class="clickable"  
