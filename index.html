@@ -12,6 +12,7 @@
             <a-assets>
 	        <a-asset-item id="turtle_obj" src="Satellite dish_Blender Internal render.obj"></a-asset-item>
 	        <a-asset-item id="turtle_mtl" src="Satellite dish_Blender Internal render.mtl"></a-asset-item>
+		<a-asset-items id="bird" src="scene.gltf" ></a-asset-items>
             </a-assets>　
             
             <a-marker
@@ -40,7 +41,8 @@
                     rotation="0 -20 0"
                 ></a-obj-model>
                  <a-obj-model src="Satellite dish_Blender Internal render.obj" mtl="Satellite dish_Blender Internal render.mtl"></a-obj-model>
-		    
+		
+		<a-entity gltf-model="#bird" scale="0.01 0.01 0.01"></a-entity>   
             </a-marker>
 
             <a-entity camera></a-entity>
