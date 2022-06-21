@@ -8,8 +8,9 @@
     <body style="margin: 0; overflow: hidden;">
         <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">  
             
-            <a-assets>
-        	<a-asset-item id="string_gltf" src="AR-materials.gltf"></a-asset-item>
+            <a-assets timeout="10000">
+	        <a-asset-item id="turtle_obj" src="turtle.obj"></a-asset-item>
+	        <a-asset-item id="turtle_mtl" src="turtle.mtl"></a-asset-item>
             </a-assets>　
             
             <a-marker
@@ -31,10 +32,12 @@
                     gesture-handler
                 ></a-image>
                 
-                <a-gltf-model 
-                    src="#string_gltf" 
-                    position="-5 5 -15"
-                    rotation="0 -20 0" ></a-gltf-model>
+                <a-obj-model 
+                src="#turtle_obj" 
+                mtl="#turtle_mtl" 
+                position="0 0 -6" 
+                rotation="0 -20 0"
+                ></a-obj-model>
                 
             </a-marker>
 
