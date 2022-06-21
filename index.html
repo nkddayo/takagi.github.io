@@ -16,22 +16,19 @@
             embedded
             gesture-detector
         ></a-scene>    
-            <a-assets>
-                <a-asset-item id="animated-asset" src="assets/AR-materials v0.obj"></a-asset-item>
-            </a-assets>
-        
+           
             <a-marker
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/pattern-Vista.patt"
+                url="marker.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
             >
                 <a-image
-                    src="assets/asset.jpeg"
+                    src="asset.jpeg"
                     scale="50 50 50"
                     class="clickable"
                     rotation="-90 0 0"
