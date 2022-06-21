@@ -8,7 +8,7 @@
     <body style="margin: 0; overflow: hidden;">
         <a-scene embedded arjs="debugUIEnabled:false;trackingMethod:best;" vr-mode-ui="enabled: false">  
             
-            <a-assets timeout="10000">
+            <a-assets>
         	<a-asset-item id="string_gltf" src="AR-materials.gltf">
             </a-asset-item></a-assets>　
             
@@ -33,9 +33,8 @@
                 
                 <a-gltf-model 
                     src="#string_gltf" 
-                    position="0 0 0"
-                    scale="1 1 1" 
-                    rotation="-90 0 0" ></a-gltf-model>
+                    position="-5 5 -15"
+                    rotation="0 -20 0" ></a-gltf-model>
                 
             </a-marker>
 
