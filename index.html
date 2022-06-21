@@ -5,7 +5,7 @@
   <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>  
-  <title>WebAR5</title>
+  <title>WebAR6</title>
   </head>  
     
   <body style="margin : 0px; overflow: hidden;">
@@ -23,8 +23,16 @@
           position="0 0 0.3"
           rotation="-90 0 0"
           scale="1.5 1.5 1"
-        >
+          class="clickable"  
+          link="href: http://smr.me.tut.ac.jp/parts/01_contents/index.html; title: jump; image: #homeThumbnail"       
+        >  
         </a-image>
+         <!-- <a-entity gltf-model="#model" 
+             position="-0.55 0 -0.5" 
+             rotation="0 140 -10" 
+             scale="0.5 0.5 0.5" 
+             visible="true">
+         </a-entity> -->
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
