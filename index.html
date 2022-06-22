@@ -15,7 +15,7 @@
      >
       
      <a-assets>
-      <a-asset-item id="model-1" src="cargo ship.glb"></a-asset-item>
+      <a-asset-item id="model-1" src="Space_rocket.glb"></a-asset-item>
       <a-asset-item id="model-2" src="old-ship.glb"></a-asset-item>
      </a-assets>
            
@@ -49,11 +49,11 @@
          <a-entity gltf-model="#model-1" 
            position="-10 20 -20" 
            rotation="-90 0 0" 
-           scale="5 5 5" 
+           scale="0.3 0.3 0.3" 
            visible="true"
-           animation="property: position.x;
-             from: -10;
-             to: 50.0;
+           animation="property: position;
+             from: -5 5 10;
+             to: -5 5 -50;
              dur: 50000;
              delay: 1000;">
          </a-entity> 
